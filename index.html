@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de QR</title>
+    <meta name="description"
+        content="Página diseñada para convertir distintos enlaces desde números de teléfono hasta redes sociales en código QR que luego se puede descargar">
+    <meta name="keywords" content="código QR, whatsapp, teléfono celular, redes sociales, enlaces">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sur-Digital">
+    <link rel="icon" href="assets/img/qr.svg" type="image/svg+xml">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 class="my-4">Generador de Código QR</h1>
+
+        <h3 class="qr-instructions">Selecciona una opción para generar tu código QR:</h3>
+
+        <!-- Lista de opciones con íconos -->
+        <ul class="option-list">
+            <li onclick="selectType('link')"><i class="bi bi-link-45deg" title="Enlace"></i></li>
+            <li onclick="selectType('phone')"><i class="bi bi-telephone-fill" title="Telefóno"></i></li>
+            <li onclick="selectType('whatsapp')"><i class="bi bi-whatsapp" title="WhatsApp"></i></li>
+            <li onclick="selectType('email')"><i class="bi bi-envelope-fill" title="E-mail"></i></li>
+            <li onclick="selectType('social')"><i class="bi bi-share-fill" title="Red Social"></i></li>
+        </ul>
+
+
+        <!-- Campo de entrada -->
+        <div class="input-group mb-3">
+            <!-- Selector de país para teléfono/WhatsApp -->
+            <span class="input-group-text" id="inputIcon"><i class="bi bi-link-45deg"></i></span>
+            <select id="country" class="form-select d-none"></select>
+            <input type="text" id="text" class="form-control" placeholder="Ingresa el enlace">
+        </div>
+
+        <button class="btn btn-primary mb-3" onclick="generateQR()">Generar QR</button>
+        <div id="qrcode"></div>
+        <button id="downloadBtn" class="btn btn-success d-none" onclick="downloadQR()">Descargar QR</button>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Derechos reservados. Hecho por <strong>Sur-Digital</strong>.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script type="module" src="data/countries.js"></script>
+    <script type="module" src="scripts/functions.js"></script>
+</body>
+
+</html>
