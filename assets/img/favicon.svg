@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="512" height="512"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Fondo redondeado -->
+  <rect width="512" height="512" rx="100" fill="#4285f4"></rect>
+  
+  <!-- Código QR (simplificado) -->
+  <g fill="#ffffff">
+    <!-- Esquina superior izquierda -->
+    <rect x="96" y="96" width="96" height="96" rx="16"></rect>
+    <rect x="112" y="112" width="64" height="64" fill="#4285f4"></rect>
+    
+    <!-- Esquina superior derecha -->
+    <rect x="320" y="96" width="96" height="96" rx="16"></rect>
+    <rect x="336" y="112" width="64" height="64" fill="#4285f4"></rect>
+    
+    <!-- Esquina inferior izquierda -->
+    <rect x="96" y="320" width="96" height="96" rx="16"></rect>
+    <rect x="112" y="336" width="64" height="64" fill="#4285f4"></rect>
+    
+    <!-- Patrón QR central (simplificado) -->
+    <rect x="224" y="96" width="64" height="64" rx="8"></rect>
+    <rect x="224" y="192" width="64" height="64" rx="8"></rect>
+    <rect x="224" y="320" width="64" height="32" rx="8"></rect>
+    <rect x="224" y="384" width="32" height="32" rx="8"></rect>
+    <rect x="288" y="192" width="32" height="32" rx="8"></rect>
+    <rect x="352" y="224" width="64" height="64" rx="8"></rect>
+    <rect x="320" y="320" width="96" height="32" rx="8"></rect>
+    <rect x="320" y="384" width="32" height="32" rx="8"></rect>
+    <rect x="384" y="384" width="32" height="32" rx="8"></rect>
+    <rect x="96" y="224" width="32" height="64" rx="8"></rect>
+    <rect x="160" y="224" width="32" height="32" rx="8"></rect>
+    <rect x="160" y="288" width="32" height="32" rx="8"></rect>
+    
+    <!-- Marcador de posición de escaneo -->
+    <circle cx="256" cy="256" r="24" fill="#ff4081"></circle>
+    <circle cx="256" cy="256" r="12" fill="#ffffff"></circle>
+  </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
