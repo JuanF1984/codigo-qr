@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Generador de Código QR",
+  "short_name": "QR Gen",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
